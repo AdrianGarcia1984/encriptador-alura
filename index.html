@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Avestan&display=swap" rel="stylesheet">
+    <title>encriptador de texto</title>
+</head>
+<body>
+    <header class="encabezado">        
+        <img src="./assets/img.png" class="imagen"/>
+        <h1 id="titulo" class="noto-sans" >Encriptador de Texto</h1>
+    </header>
+    <ul class="text_area">
+        <li id="texto">
+            <h2 id="titulo" class="noto-sans" >texto a encriptar</h2>
+            <textarea name="texto_encriptar" class="text-area" id="texto_encriptar" cols="40" rows="10" placeholder="escribe tu texto aqui" autofocus></textarea>
+        
+        <section id="campo_botones">
+            <button id="Boton_encriptar" class="btn" onclick="encriptador()">encriptar</button>
+            <button id="Boton_desencriptar"  class="btn" onclick="desEncriptador()">desencriptar</button>
+            
+        </section>
+    </li>
+        <li id="texto encriptado">
+            <h2 id="titulo" class="noto-sans" >texto encriptado</h2>
+            <textarea name="texto_desencriptar" class="text-area"  id="texto_desencriptar" cols="40" rows="10"></textarea>
+            <section>
+                <button id="Boton_copiar" onclick="copiarAccion()" class="btn" >copiar texto</button>
+            </section>
+        </li>
+    </ul>
+   
+    <footer id="footer">
+        Desarrollado por Adrian Garcia
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
